@@ -1,0 +1,26 @@
+<%- include('./partials/head.ejs') %>
+<body>
+  <%- include('./partials/nav.ejs') %>
+  <table>
+    <tr>
+      <th>UserName</th>
+      <th>Purpose of visit</th>
+      <th>Arrival Date</th>
+      <th>Departure Date</th>
+      <th>Cancel Booking</th>
+    </tr>
+    <% if(bookings.length > 0) { %> <% bookings.forEach(booking => { %>
+    <tr>
+      <td><h3 class="user"><%= booking.name %></h3></td>
+      <td><p class="purpose"><%= booking.purpose %></p></td>
+      <td><p class="arrivalDate"><%= booking.arrivalDate %></p></td>
+      <td><p class="departureDate"><%= booking.departureDate%></p></td>
+      <td>
+        <a class="cancel-booking" href="/bookings/<%= booking._id%>"
+          >Cancel booking
+        </a>
+      </td>
+    </tr>
+    <% }) %> <% } %>
+  </table>
+</body>

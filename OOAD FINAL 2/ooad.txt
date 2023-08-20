@@ -1,0 +1,36 @@
+class diagram(structural diagram)
+-types of objects and relations between them
+-describes attributes and operations of a class
+-analysis and design of static view of an application
+-base for component and deployment diagrams
+-three sections-upper-name of the class, middle-attributes and lower-methods or operations
+-relations-dependency, generalisation, and association-aggregation and composition.
+
+use-case diagram(behavioral diagram)
+-functionalities of system turned into usecases
+-use cases, actors and their relationships
+-dynamic view of the system
+-how entity from outside of system interacts with the system
+-internal and external factors that influence the system
+
+interaction diagrams-sequence and collaboration diagram
+sequence diagram(behavioral diagram)
+-flow of messages in the system
+-dynamic view of the system
+-interaction between objects in a system
+-sequence can get more complex but are easy to generate
+-incorrect results maybe produced, if order of flow of messages changes
+
+collaboration diagram(behavioral diagram)
+-both sequence and diagram represent same information but differently, also known as communication diagram
+-potrays object architecture in the system 
+-
+
+
+activity diagram(behavioral diagram)
+
+state chart diagram(behavioral diagram)
+
+component diagram(structural diagram)
+
+deployment diagram(structural diagram)

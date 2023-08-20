@@ -1,0 +1,19 @@
+<%- include('./partials/head.ejs') %>
+
+  <body>
+    <div class="form-container">
+      <form class="form" action="/book" method="post">
+        <label class="label" for="username">Username: </label>
+        <input class="input" type="text" id="name" name="name" required placeholder="Name" />
+        <label class="label" for="purpose">Purpose of visit: </label>
+        <input class="input" type="text" id="purpose" name="purpose" required placeholder="Ex: Tour" />
+        <label class="label" for="email">Email: </label>
+        <input class="input" type="text" id="email" name="email" required placeholder="example@gmail.com" />
+        <label class="label" for="arrival_date">Arrival date: </label>
+        <input class="input" type="date" id="arrivalDate" name="arrivalDate" required placeholder="YYYY-MM-DD" />
+        <label class="label" for="departure_date">Departure date: </label>
+        <input class="input" type="date" id="departureDate" name="departureDate" required placeholder="YYYY-MM-DD" />
+        <button class="btn btn-primary" type="submit">Book</button>
+      </form>
+    </div>
+  </body>

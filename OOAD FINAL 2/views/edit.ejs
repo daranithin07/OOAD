@@ -1,0 +1,55 @@
+<%- include('./partials/head.ejs') %>
+<body>
+  <%- include('./partials/nav.ejs') %>
+  <div class="form-container">
+    <form class="form" action="/edit" method="post">
+      <h1 class="label error-label"></h1>
+      <label class="label" for="image">Image: </label>
+      <input
+        class="input"
+        type="text"
+        id="image"
+        name="image"
+        required
+        placeholder="image link"
+      />
+      <label class="label" for="title">Title: </label>
+      <input
+        class="input"
+        type="text"
+        id="title"
+        name="title"
+        required
+        placeholder="Family Room"
+      />
+      <label class="label" for="info">Info: </label>
+      <input
+        class="input"
+        type="text"
+        id="info"
+        name="info"
+        required
+        placeholder="some description about the room"
+      />
+      <label class="label" for="price">Price: </label>
+      <input
+        class="input"
+        type="text"
+        id="price"
+        name="price"
+        required
+        placeholder="$300"
+      />
+      <label class="label" for="people">No.of People: </label>
+      <input
+        class="input"
+        type="text"
+        id="people"
+        name="people"
+        required
+        placeholder="2-4"
+      />
+      <button class="btn btn-primary" type="submit">Update</button>
+    </form>
+  </div>
+</body>

@@ -1,0 +1,18 @@
+<%- include('./partials/head.ejs') %>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+      <div class="form-container">
+        <form class="form" action="/payment" method="post">
+          <label class="label" for="username">Card No: </label>
+          <input class="input" type="text" id="card_no" name="card_no" required placeholder="49489764575948" />
+          <label class="label" for="name_on_card">Name(As on card): </label>
+          <input class="input" type="text" id="name_on_card" name="name_on_card" required placeholder="full name" />
+          <label class="label" for="cvv">CVV: </label>
+          <input class="input" type="text" id="cvv" name="cvv" required placeholder="888" />
+          <label for="phone" class="label">Phone Number: </label>
+          <input type="text" class="input" id="phone" name="phone" required placeholder="+91" />
+          <button class="btn btn-primary" type="submit">Book Now</button>
+        </form>
+      </div>
+  </body>

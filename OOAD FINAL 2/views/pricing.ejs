@@ -1,0 +1,114 @@
+<html>
+<%- include('./partials/head.ejs') %>
+
+  <body>
+    <%- include('./partials/nav.ejs')%>
+      <h1 class="rooms">Rooms We provide</h1>
+      <% if(currentUser=='admin@gmail.com' ) { %>
+        <div class="new-room">
+          <button class="btn btn-secondary" type="submit"><a href="/add" class="room">Add New Room</a></button>
+        </div>
+        <% } %>
+          <section class="cards">
+            <% if(rooms) { %>
+              <% rooms.forEach((room)=> { %>
+                <div class="card" style="width: 25rem">
+                  <img class="card-img-top" src="<%= room.image %>" alt="Card image cap" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <%= room.title %>
+                    </h5>
+                    <p class="card-text">
+                      <%= room.info %>
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Price per day: <%= room.price %>
+                    </li>
+                    <li class="list-group-item">People per room: <%= room.people %>
+                    </li>
+                    <li class="list-group-item">All delicacies: Included</li>
+                  </ul>
+                  <div class="card-body">
+                    <% if(currentUser=="admin@gmail.com" ) { %>
+                      <a href="/edit/<%= room._id%>" class="card-link">Edit</a>
+                      <a href="/delete/<%= room._id%>" class="card-link">Delete</a>
+                      <% } %>
+                        <% if(currentUser !="admin@gmail.com" ) { %>
+                          <a href="/book" class="card-link">Book Now</a>
+                          <% } %>
+                  </div>
+                </div>
+                <% }) %>
+                  <% } %>
+          </section>
+  </body>
+  </head>
+
+</html>
+<!-- <div class="card" style="width: 25rem">
+  <img
+    class="card-img-top"
+    src="assests/images/luxurious.jpg"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Luxurious Room</h5>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the
+      bulk of the card's content.
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Price per day: $500</li>
+    <li class="list-group-item">People per room: 2-4</li>
+    <li class="list-group-item">All delicacies: Included</li>
+  </ul>
+  <div class="card-body">
+    <a href="/book" class="card-link">Book Now</a>
+  </div>
+</div>
+<div class="card" style="width: 25rem">
+  <img
+    class="card-img-top"
+    src="assests/images/family.jpg"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Family Room</h5>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the
+      bulk of the card's content.
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Price per day: $200</li>
+    <li class="list-group-item">People per room: 2-4</li>
+    <li class="list-group-item">Breakfast: Included</li>
+  </ul>
+  <div class="card-body">
+    <a href="/book" class="card-link">Book Now</a>
+  </div>
+</div>
+<div class="card" style="width: 25rem">
+  <img
+    class="card-img-top"
+    src="assests/images/couple.jpg"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Couple Room</h5>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the
+      bulk of the card's content.
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Price per day: $300</li>
+    <li class="list-group-item">People per room: 2</li>
+    <li class="list-group-item">Breakfast: Included</li>
+  </ul>
+  <div class="card-body">
+    <a href="/book" class="card-link">Book Now</a>
+  </div>
+</div> -->

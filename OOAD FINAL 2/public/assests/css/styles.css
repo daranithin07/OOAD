@@ -1,0 +1,286 @@
+html,
+body {
+  background-color: rgba(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cancel-booking,
+.room {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cancel-booking:hover,
+.cancel-booking:active,
+.cancel-booking:visited,
+.room:hover,
+.room:active,
+.room:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+.home-row {
+  margin-bottom: 3rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.heading-main {
+  vertical-align: middle;
+}
+
+.why-us {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.list-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1600px) {
+
+  .list-1,
+  .list-2 {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .list-1,
+  .list-2 {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .list-1,
+  .list-2 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .list-1,
+  .list-2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .list-1,
+  .list-2 {
+    font-size: 0.9rem;
+  }
+}
+
+.why-us--li {
+  margin-bottom: 4rem;
+}
+
+.symbol {
+  padding: 1rem;
+}
+
+.text {
+  padding: 20% 20%;
+}
+
+.hidden {
+  display: none;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.home-text {
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 5% 10% 10% 10%;
+}
+
+.new-room {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.card {
+  margin-bottom: 3rem;
+}
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.input {
+  min-width: 25rem;
+  margin-bottom: 2rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #fff;
+}
+
+.user,
+.purpose,
+.arrivalDate,
+.departureDate {
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.wrapper {
+  height: 100vh;
+  background: #000;
+  background: url("https://i.imgur.com/g63vXfd.jpg");
+  background-size: cover;
+  width: 100%
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8)
+}
+
+.contact-us {
+  margin-top: 50px;
+  margin-bottom: 50px
+}
+
+.contact-us h3,
+p {
+  color: #fff
+}
+
+.address {
+  margin-top: 14px !important;
+  margin-left: 10px
+}
+
+.address span {
+  color: #fb6b04
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.icons i {
+  font-size: 20px
+}
+
+.forms {
+  padding: 20px
+}
+
+.inputs input {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #eee
+}
+
+.inputs input:focus {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #fb6b04;
+  box-shadow: none
+}
+
+.inputs textarea {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #eee;
+  width: 100%;
+  resize: none
+}
+
+.inputs textarea:focus {
+  margin-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid #fb6b04;
+  box-shadow: none;
+  resize: none
+}
+
+.form-control {
+  padding: .375rem .25rem
+}
+
+.rooms {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
